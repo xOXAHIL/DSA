@@ -56,5 +56,42 @@ int main(){
 
     //total occurance
 
-
 }
+
+// noOfTargetOccurences(vector<int> arr, ll target)
+// {
+//     ll s = arr.size();
+//     ll l = 0;
+//     ll r = s - 1;
+//     while (l <= r)
+//     {
+//         int m = l + (r - 1) / 2;
+
+//         if (arr[m] == target)
+//         {
+//             ll leftCount = m, rightcount = m;
+//             int count = 1;
+
+//             while (rightcount + 1 < arr.size() && arr[rightcount] == arr[rightcount + 1])
+//             {
+//                 rightcount++;
+//                 count++;
+//             }
+//             while (leftCount - 1 >= 0 && arr[leftCount] == arr[leftCount - 1])
+//             {
+//                 leftCount--;
+//                 count++;
+//             }
+
+//             return count;
+//         }
+//         if (arr[m] < target)
+//         {
+//             l = m + 1;
+//         }
+//         else
+//         {
+//             r = m - 1;
+//         }
+//     }
+// }
